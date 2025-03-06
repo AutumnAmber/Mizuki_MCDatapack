@@ -1,0 +1,22 @@
+{
+    "type" : "minecraft:crafting_shaped",
+    "key" : {
+        "@" : "minecraft:lantern"
+    },
+    "pattern" : [
+        "@"
+    ],
+    "result" : {
+        "count" : 1,
+        "id" : "minecraft:soul_lantern",
+        "components" : {
+            "rarity" : "rare",
+            "enchantments" :{
+                "levels":{
+                    "protection" : 5
+                }
+            },
+            "item_name" : "达里奥的提灯"
+        }
+    }
+}
