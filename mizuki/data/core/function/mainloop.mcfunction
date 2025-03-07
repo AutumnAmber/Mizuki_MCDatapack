@@ -36,3 +36,6 @@ execute as @a run execute if score @s weakness >= 4 number run effect give @s we
 
 #畸变抑制
 execute as @a run execute if data entity @s SelectedItem.components.minecraft:rarity run execute if data entity @s SelectedItem.components.minecraft:enchantments.levels.minecraft:protection run function light:dario_lantern
+
+#buff7 light_old
+execute if score buff7 buff matches 0 run scoreboard players operation light_old core = light core

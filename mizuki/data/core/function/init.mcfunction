@@ -16,6 +16,7 @@ scoreboard objectives add slowness dummy
 scoreboard objectives add player_health_rate dummy
 scoreboard objectives add speed dummy
 scoreboard objectives add remove dummy
+scoreboard objectives add buff6cnt dummy
 
 scoreboard players set buffnum number 150
 scoreboard players set debuffnum number 80
@@ -46,6 +47,7 @@ scoreboard players set buff4 buff 0
 scoreboard players set @a playerhealthold 20
 scoreboard players set @a player_res_health 20
 scoreboard players set mxlight core 100
+scoreboard players set light_old core 100
 
 bossbar add mizuki:light "灯火"
 bossbar set mizuki:light max 100
