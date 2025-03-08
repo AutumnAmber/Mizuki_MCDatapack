@@ -1,5 +1,5 @@
-tag remove @s debuff3
-tag add @s nodebuff3
+tag @s remove debuff3
+tag @s add nodebuff3
 
 scoreboard players add @s player_health_rate 5
 execute as @s run function core:healthreset

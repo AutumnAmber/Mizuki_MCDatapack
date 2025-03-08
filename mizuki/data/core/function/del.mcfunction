@@ -16,6 +16,7 @@ scoreboard objectives remove slowness
 scoreboard objectives remove player_health_rate  
 scoreboard objectives remove speed  
 scoreboard objectives remove remove  
+scoreboard objectives remove deathcnt
 
 tag @a remove debuff1
 tag @a remove nodebuff1
@@ -31,3 +32,5 @@ schedule clear debuff:debuff1loop
 schedule clear debuff:debuff2loop
 schedule clear debuff:debuff3loop
 schedule clear debuff:debuff4loop
+
+bossbar remove mizuki:light

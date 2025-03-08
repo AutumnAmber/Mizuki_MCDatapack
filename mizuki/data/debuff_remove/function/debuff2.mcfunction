@@ -1,5 +1,5 @@
-tag remove @s debuff2
-tag add @s nodebuff2
+tag @s remove debuff2
+tag @s add nodebuff2
 
 scoreboard players remove sum debuff2 1
 scoreboard players set @s debuff2 0

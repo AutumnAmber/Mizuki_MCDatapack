@@ -39,3 +39,5 @@ execute as @a run execute if data entity @s SelectedItem.components.minecraft:ra
 
 #buff7 light_old
 execute if score buff7 buff matches 0 run scoreboard players operation light_old core = light core
+
+execute as @a if score @s deathcnt > 0 number run function core:playerdeath

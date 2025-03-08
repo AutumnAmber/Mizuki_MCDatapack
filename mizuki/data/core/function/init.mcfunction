@@ -17,10 +17,12 @@ scoreboard objectives add player_health_rate dummy
 scoreboard objectives add speed dummy
 scoreboard objectives add remove dummy
 scoreboard objectives add buff6cnt dummy
+scoreboard objectives add deathcnt deathCount
 
 scoreboard players set buffnum number 150
 scoreboard players set debuffnum number 80
 scoreboard players set 0 number 0
+scoreboard players set 1 number 1
 scoreboard players set 4 number 4
 scoreboard players set 5 number 5
 scoreboard players set 10 number 10
@@ -44,6 +46,9 @@ scoreboard players set buff1 buff 0
 scoreboard players set buff2 buff 0
 scoreboard players set buff3 buff 0
 scoreboard players set buff4 buff 0
+scoreboard players set buff5 buff 0
+scoreboard players set buff6 buff 0
+scoreboard players set buff7 buff 0
 scoreboard players set @a playerhealthold 20
 scoreboard players set @a player_res_health 20
 scoreboard players set mxlight core 100
@@ -63,10 +68,15 @@ tag @a add nodebuff4
 
 scoreboard objectives setdisplay sidebar core
 
+execute as @a run attribute @s minecraft:max_health base set 20
+effect give @a instant_health 1 100
+
 schedule function debuff:debuff1loop 1s
 schedule function debuff:debuff2loop 1s
 schedule function debuff:debuff3loop 1s
 schedule function debuff:debuff4loop 1s
+
+function core:intro
 function core:mainloop
 
 #生命板块有maxhealth playerhealth playerhealthold
