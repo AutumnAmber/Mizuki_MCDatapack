@@ -1,4 +1,5 @@
 execute store result score randombuff core run random value 1..7
+scoreboard players set flag core 0
 
 execute if score randombuff core matches 1 run function dice:buff1
 execute if score randombuff core matches 2 run function dice:buff2
