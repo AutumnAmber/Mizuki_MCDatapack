@@ -22,6 +22,6 @@ execute if score buff5 buff = 0 number run scoreboard players set flag core 1
 execute if score buff5 buff = 0 number run function buff:buff5  
 execute if score flag core = 1 number run return 0
 
-execute if score buff6 buff = 0 number run scoreboard plawyers set flag core 1
+execute if score buff6 buff = 0 number run scoreboard players set flag core 1
 execute if score buff6 buff = 0 number run function buff:buff6  
 execute if score flag core = 1 number run return 0

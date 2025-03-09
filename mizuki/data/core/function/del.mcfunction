@@ -17,6 +17,8 @@ scoreboard objectives remove player_health_rate
 scoreboard objectives remove speed  
 scoreboard objectives remove remove  
 scoreboard objectives remove deathcnt
+scoreboard objectives remove buff2detect
+scoreboard objectives remove buff6cnt
 
 tag @a remove debuff1
 tag @a remove nodebuff1
@@ -34,3 +36,5 @@ schedule clear debuff:debuff3loop
 schedule clear debuff:debuff4loop
 
 bossbar remove mizuki:light
+
+gamerule keepInventory false

@@ -41,3 +41,5 @@ execute as @a run execute if data entity @s SelectedItem.components.minecraft:ra
 execute if score buff7 buff matches 0 run scoreboard players operation light_old core = light core
 
 execute as @a if score @s deathcnt > 0 number run function core:playerdeath
+
+execute store result bossbar mizuki:light max run scoreboard players get mxlight core

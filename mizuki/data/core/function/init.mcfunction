@@ -17,10 +17,12 @@ scoreboard objectives add player_health_rate dummy
 scoreboard objectives add speed dummy
 scoreboard objectives add remove dummy
 scoreboard objectives add buff6cnt dummy
+scoreboard objectives add buff2detect dummy
 scoreboard objectives add deathcnt deathCount
 
 scoreboard players set buffnum number 150
 scoreboard players set debuffnum number 80
+scoreboard players set debuff2num number 50
 scoreboard players set 0 number 0
 scoreboard players set 1 number 1
 scoreboard players set 4 number 4
@@ -48,6 +50,7 @@ scoreboard players set buff3 buff 0
 scoreboard players set buff4 buff 0
 scoreboard players set buff5 buff 0
 scoreboard players set buff6 buff 0
+scoreboard players set @a buff6cnt 0
 scoreboard players set buff7 buff 0
 scoreboard players set @a playerhealthold 20
 scoreboard players set @a player_res_health 20
@@ -80,3 +83,5 @@ function core:intro
 function core:mainloop
 
 #生命板块有maxhealth playerhealth playerhealthold
+
+gamerule keepInventory false
