@@ -1,5 +1,6 @@
 schedule function core:mainloop 1t
 
+scoreboard players set start core 1
 execute store result bossbar mizuki:light value run scoreboard players get light core
 
 #roll

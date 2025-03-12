@@ -23,13 +23,17 @@ scoreboard objectives add deathcnt deathCount
 scoreboard players set buffnum number 150
 scoreboard players set debuffnum number 80
 scoreboard players set debuff2num number 50
+scoreboard players set -1 number -1
 scoreboard players set 0 number 0
 scoreboard players set 1 number 1
 scoreboard players set 4 number 4
 scoreboard players set 5 number 5
 scoreboard players set 10 number 10
+scoreboard players set 15 number 15
 scoreboard players set 60 number 60
 scoreboard players set 100 number 100
+
+scoreboard players set difficulty core 0
 
 scoreboard players set @a mining 0
 scoreboard players set @a speed 0
@@ -56,6 +60,7 @@ scoreboard players set @a playerhealthold 20
 scoreboard players set @a player_res_health 20
 scoreboard players set mxlight core 100
 scoreboard players set light_old core 100
+scoreboard players set start core 0
 
 bossbar add mizuki:light "灯火"
 bossbar set mizuki:light max 100
@@ -80,7 +85,7 @@ schedule function debuff:debuff3loop 1s
 schedule function debuff:debuff4loop 1s
 
 function core:intro
-function core:mainloop
+function core:difficulty
 
 #生命板块有maxhealth playerhealth playerhealthold
 
