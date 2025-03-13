@@ -3,6 +3,7 @@ schedule function core:mainloop 1t
 scoreboard players set start core 1
 execute store result bossbar mizuki:light value run scoreboard players get light core
 
+
 #roll
 scoreboard players add time core 1
 scoreboard players add time_roll core 1
@@ -40,7 +41,5 @@ execute as @a run execute if data entity @s SelectedItem.components.minecraft:ra
 
 #buff7 light_old
 execute if score buff7 buff matches 0 run scoreboard players operation light_old core = light core
-
-execute as @a if score @s deathcnt > 0 number run function core:playerdeath
 
 execute store result bossbar mizuki:light max run scoreboard players get mxlight core

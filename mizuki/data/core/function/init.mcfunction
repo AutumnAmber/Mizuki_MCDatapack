@@ -20,9 +20,9 @@ scoreboard objectives add buff6cnt dummy
 scoreboard objectives add buff2detect dummy
 scoreboard objectives add deathcnt deathCount
 
-scoreboard players set buffnum number 150
-scoreboard players set debuffnum number 80
-scoreboard players set debuff2num number 50
+scoreboard players set buffnum number 130
+scoreboard players set debuffnum number 60
+scoreboard players set debuff2num number 30
 scoreboard players set -1 number -1
 scoreboard players set 0 number 0
 scoreboard players set 1 number 1
