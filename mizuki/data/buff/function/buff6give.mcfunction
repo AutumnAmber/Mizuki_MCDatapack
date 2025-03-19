@@ -1,5 +1,4 @@
-effect give @s instant_health 1 2
-effect give @s fire_resistance 10 2
-effect give @s resistance 10 1
+effect give @s instant_health 1 10
+effect give @s fire_resistance 10 0
 
 scoreboard players set @s buff6cnt 2400

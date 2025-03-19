@@ -1,5 +1,8 @@
-schedule function debuff:debuff4loop 1s
+schedule function debuff:debuff4loop 3s
 
+execute as @a[tag=debuff4,tag=nodebuff4] run tellraw @a [{"text":""},{"selector":"@s"},{"text":"获得了排异反应：神经退行"}]
+execute as @a[tag=debuff4,tag=nodebuff4] run tellraw @a [{"text":"大脑神经元萎缩，反应迟缓，意识游离"}]
+execute as @a[tag=debuff4,tag=nodebuff4] run tellraw @a [{"text":"产生排异反应的玩家将每数秒获得随机等级的速度/缓慢效果"}]
 execute as @a[tag=debuff4,tag=nodebuff4] run scoreboard players set @s debuff4 1
 execute as @a[tag=debuff4,tag=nodebuff4] run scoreboard players add sum debuff4 1
 execute as @a[tag=debuff4,tag=nodebuff4] run tag @s remove nodebuff4
